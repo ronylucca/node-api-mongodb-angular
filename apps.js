@@ -4,6 +4,8 @@ var bodyParser = require("body-parser");
 var mongoose = require('mongoose');
 
 // Mongoose connection
+//mongod --dbpath ./data/db
+
 
 mongoose.connect('mongodb://localhost/bookstore')
 
@@ -30,7 +32,6 @@ app.get('/', function(req, res){
         res.send("Hello World!" + allBooks);
       })
 
-      
     
 });
 
